@@ -71,7 +71,7 @@ Web Dashboard
 | **Amazon API Gateway** | Provides API endpoints for the dashboard    |
 | **AWS IAM**            | Controls permissions between AWS services   |
 
-## 🔍 Image Analysis
+## Image Analysis
 
 Amazon Rekognition provides:
 
