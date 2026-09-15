@@ -1,6 +1,6 @@
 // Replace this with your deployed API Gateway endpoint.
-const API_URL = "YOUR_API_GATEWAY_URL";
-
+const API_URL =
+    "https://vki7gx45r7.execute-api.us-east-2.amazonaws.com";
 
 async function uploadImage() {
 
