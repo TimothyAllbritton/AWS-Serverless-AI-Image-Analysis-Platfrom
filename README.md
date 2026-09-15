@@ -262,3 +262,45 @@ The application produces a structured JSON report containing detected objects, f
   }
 }
 ```
+
+### How It Works
+
+I chose S3 as the starting point because it provides durable object storage and can trigger Lambda when a new image is uploaded.
+
+I used Rekognition for the initial structured image analysis and Bedrock to turn those structured results into a natural-language description.
+
+API Gateway provides the interface between the browser and the AWS backend, while presigned S3 URLs allow the browser to upload images without exposing AWS credentials.
+
+## Challenges & Solutions
+
+### Browser CORS Error
+
+**Problem:**
+The dashboard initially failed when trying to communicate with the AWS API from the browser.
+
+**Solution:**
+Configured CORS in API Gateway to allow the dashboard to send GET, POST, and OPTIONS requests.
+
+### Local Dashboard Security Error
+
+**Problem:**
+Opening `index.html` directly with `file://` caused browser security restrictions when calling the AWS API.
+
+**Solution:**
+Ran the dashboard through a local HTTP server using `http://localhost:8000`.
+
+### Asynchronous Image Processing
+
+**Problem:**
+Image analysis does not complete instantly after an upload.
+
+**Solution:**
+The frontend periodically checks the API for the analysis result until processing is complete.
+
+### Upload Security
+
+**Problem:**
+The browser should not contain AWS credentials.
+
+**Solution:**
+Created a Lambda function that generates temporary S3 presigned upload URLs.
