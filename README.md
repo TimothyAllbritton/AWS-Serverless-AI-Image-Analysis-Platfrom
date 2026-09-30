@@ -220,15 +220,15 @@ This project uses AWS services that can incur charges depending on usage. Keep t
 
 ### Dashboard
 
-![Dashboard](screenshots/dashboard.png)
+![Dashboard](screenshots/dashboardd.png)
 
 ### Image Upload
 
-![Upload](screenshots/upload.png)
+![Upload](screenshots/uupload.png)
 
 ### AI Analysis Results
 
-![Analysis Results](screenshots/analysis.png)
+![Analysis Results](screenshots/analysiss.png)
 
 ## Image Analyzed
 
