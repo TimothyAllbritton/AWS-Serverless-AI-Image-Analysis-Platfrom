@@ -34,21 +34,23 @@
             </h1>
 
             <p>
-                Analyze images using Amazon Rekognition
-                and Amazon Bedrock.
+                Analyze images using Amazon Rekognition and Amazon Bedrock.
             </p>
 
         </header>
 
 
+        <!-- Upload Section -->
+
         <section class="search-card">
 
             <h2>
-                Upload Image
+                Analyze an Image
             </h2>
 
             <p>
-                Choose an image to upload and analyze.
+                Upload an image and let AWS analyze it using
+                Amazon Rekognition and Amazon Bedrock.
             </p>
 
             <div class="input-row">
@@ -68,6 +70,8 @@
         </section>
 
 
+        <!-- Loading -->
+
         <section
             id="loading"
             class="loading hidden"
@@ -76,11 +80,15 @@
         </section>
 
 
+        <!-- Error -->
+
         <section
             id="error"
             class="error hidden"
         ></section>
 
+
+        <!-- Analysis Dashboard -->
 
         <section
             id="dashboard"
@@ -100,6 +108,8 @@
             </div>
 
 
+            <!-- AI Summary -->
+
             <div class="summary-card">
 
                 <h2>
@@ -110,6 +120,8 @@
 
             </div>
 
+
+            <!-- Statistics -->
 
             <div class="cards">
 
@@ -195,8 +207,9 @@
             </div>
 
 
-            <div class="details-grid">
+            <!-- Detailed Results -->
 
+            <div class="details-grid">
 
                 <div class="detail-card">
 
@@ -241,18 +254,228 @@
 
                 </div>
 
+            </div>
+
+        </section>
+
+
+        <!-- Project Screenshots -->
+
+        <section class="screenshots-section">
+
+            <div class="section-header">
+
+                <div class="badge">
+                    PROJECT DEMO
+                </div>
+
+                <h2>
+                    See the Dashboard in Action
+                </h2>
+
+                <p>
+                    Explore the upload workflow and AI-powered
+                    image analysis results.
+                </p>
+
+            </div>
+
+
+            <div class="screenshots-grid">
+
+
+                <!-- Dashboard Screenshot -->
+
+                <div class="screenshot-card">
+
+                    <img
+                        src="screenshots/dashboard.png"
+                        alt="AWS AI Image Analysis Dashboard"
+                    >
+
+                    <div class="screenshot-info">
+
+                        <h3>
+                            Dashboard
+                        </h3>
+
+                        <p>
+                            The web dashboard used to upload images
+                            and view AI analysis results.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Upload Screenshot -->
+
+                <div class="screenshot-card">
+
+                    <img
+                        src="screenshots/upload.png"
+                        alt="AWS image upload interface"
+                    >
+
+                    <div class="screenshot-info">
+
+                        <h3>
+                            Image Upload
+                        </h3>
+
+                        <p>
+                            Users upload an image through the
+                            serverless AWS application.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Analysis Screenshot -->
+
+                <div class="screenshot-card">
+
+                    <img
+                        src="screenshots/analysis.png"
+                        alt="AWS AI image analysis results"
+                    >
+
+                    <div class="screenshot-info">
+
+                        <h3>
+                            AI Analysis Results
+                        </h3>
+
+                        <p>
+                            Amazon Rekognition and Amazon Bedrock
+                            generate detailed image analysis.
+                        </p>
+
+                    </div>
+
+                </div>
 
             </div>
 
         </section>
 
 
+        <!-- Technology Section -->
+
+        <section class="technology-section">
+
+            <div class="section-header">
+
+                <div class="badge">
+                    AWS ARCHITECTURE
+                </div>
+
+                <h2>
+                    Built with AWS
+                </h2>
+
+                <p>
+                    A serverless architecture connects the frontend
+                    with AWS AI services for automated image analysis.
+                </p>
+
+            </div>
+
+
+            <div class="technology-grid">
+
+                <div class="technology-card">
+
+                    <h3>
+                        Amazon S3
+                    </h3>
+
+                    <p>
+                        Securely stores uploaded images and analysis results.
+                    </p>
+
+                </div>
+
+
+                <div class="technology-card">
+
+                    <h3>
+                        AWS Lambda
+                    </h3>
+
+                    <p>
+                        Runs the serverless image processing pipeline.
+                    </p>
+
+                </div>
+
+
+                <div class="technology-card">
+
+                    <h3>
+                        Amazon Rekognition
+                    </h3>
+
+                    <p>
+                        Detects objects, faces, text, and safety labels.
+                    </p>
+
+                </div>
+
+
+                <div class="technology-card">
+
+                    <h3>
+                        Amazon Bedrock
+                    </h3>
+
+                    <p>
+                        Generates a natural-language AI summary of the image.
+                    </p>
+
+                </div>
+
+
+                <div class="technology-card">
+
+                    <h3>
+                        API Gateway
+                    </h3>
+
+                    <p>
+                        Connects the web dashboard with the AWS backend.
+                    </p>
+
+                </div>
+
+
+                <div class="technology-card">
+
+                    <h3>
+                        IAM
+                    </h3>
+
+                    <p>
+                        Controls permissions between AWS services.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- Footer -->
+
         <footer>
 
             <p>
-                Built with Amazon S3 • AWS Lambda •
-                Amazon Rekognition • Amazon Bedrock •
-                API Gateway
+                Built with Amazon S3 • AWS Lambda • Amazon Rekognition
+                • Amazon Bedrock • API Gateway • IAM
             </p>
 
         </footer>
